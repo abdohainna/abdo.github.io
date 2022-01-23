@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html & css & js</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-code"></i> H&C&J </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="searchBox">
+            <label for="searchBox" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-moon" id="theme-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="html.html">html</a>
+            <a href="css.html">css</a>
+            <a href="js.html">javascript</a>
+            <a href="quizz.html">quizz</a>
+            <a href="contact us.html">contact us</a>
+        </nav>
+
+        <form action="" class="login-form">
+
+            <div class="inputBox">
+                <span>username</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+
+            <div class="inputBox">
+                <span>password</span>
+                <input type="password" placeholder="enter your password">
+            </div>
+
+            <div class="remember">
+                <input type="checkbox" name="" id="login-remember">
+                <label for="login-remember">remember me</label>
+            </div>
+
+            <input type="submit" class="btn" value="login">
+
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="image" data-aos="fade-down">
+            <img src="css.png" alt="">
+        </div>
+
+        <div class="content" data-aos="fade-up">
+            <h3>This page provides a summary for Css:</h3>
+            <p>Cascading Style Sheets (CSS) is one of the three main components of modern webpages, along with Hypertext
+                Markup Language (HTML) and JavaScript. HTML indicates to the browser what elements should be included on
+                the page (and in what order). CSS indicates how each should be styled. JavaScript provides a means for
+                webpage authors to manipulate these elements programmatically and in response to actions by the end
+                user. Tutorials and reference material covering all three components are available here.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!--  section starts  -->
+
+    <section class="pricing" id="pricing">
+
+        <h1 class="heading"> <span>CSS</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="zoom-in-up">
+                <h3> Introduction </h3>
+                <p>
+
+
+                    Cascading Style Sheets (CSS) is one of the three main components of modern webpages, along with
+                    Hypertext Markup Language (HTML) and JavaScript. HTML indicates to the browser what elements should
+                    be included on the page (and in what order). CSS indicates how each should be styled. JavaScript
+                    provides a means for webpage authors to manipulate these elements programmatically and in response
+                    to actions by the end user. Tutorials and reference material covering all three components are
+                    available here.
+                    <br>
+                    In these pages, we describe CSS further. Text used within HTML, CSS or JavaScript files is generally
+                    shown in courier new (i.e. a fixed space) font. The pages contain links to an extensive body of
+                    reference material explaining HTML, CSS and JavaScript in detail. We also provide a wide range of
+                    examples, which can help you understand better how HTML, CSS and JavaScript work. See below for
+                    further details on how to access these examples.
+                    <br>
+                    CSS instructions can be:
+                    <br>
+                    (a) included within an individual HTML element (as part of the mark-up relating to that element),
+                    i.e. as ‘in-line’ CSS
+                    <br>
+                    (b) included in the HTML file where the relevant element(s) are located, but not directly within the
+                    elements concerned, i.e. as ‘in-file’ CSS
+                    <br>
+                    (c) included in external CSS files, i.e. as ‘external’ CSS, with a HTML &lt;link&gt; element used to
+                    indicate where any such CSS files applicable to a given HTML file are located.
+                    <br>
+                    The style attributes of an HTML element can also be altered by JavaScript ‘on the fly’, e.g. after
+                    the page has initially loaded or in response to specific user actions such as clicking a button.
+                    <br>
+
+                    CSS styles typically operate according to a hierarchy, with any JavaScript overrides taking
+                    precedence over any CSS styles present when the page is initially loaded but otherwise in-line CSS
+                    taking precedence over in-file CSS and in-file CSS taking precedence over external CSS (unless the
+                    ‘important’ characteristic is included in the style statement). In-file CSS is contained in a
+                    &lt;style&gt; element. If there is more than one such element then later ones take precedence over
+                    earlier ones.
+                </p>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up">
+                <h3> Basics </h3>
+                <p>
+
+                    CSS is typically set out in the form of ‘rule-sets’, which involve a selector and a declaration
+                    block. Usually CSS is applied to types of elements. For example, the style rule
+                    <br>
+                    h3 {color: blue; text-align: center;}
+                    <br>
+                    has a selector which is h3 and a declaration block which is {color: blue; text-align: center;}. It
+                    tells the browser that any &lt;h3&gt; element (to which the rule applies) should be centre-aligned
+                    and appear in blue. As with HTML, line breaks and multiple spaces are ignored.
+                    <br>
+                    <br>
+                    However, within HTML you can also define classes of elements with common formatting styles using the
+                    element’s class attribute. For
+                    example, the style rule
+                    <br>
+                    <br>
+                    .center {color: red; text-align: center}
+                    <br>
+                    <br>
+                    would indicate that any element with a class attribute equal to center should be centre-aligned and
+                    appear in red.
+                    <br>
+                    You can also apply CSS to elements of a specific type and class. For example, the style rule
+                    <br>
+                    <br>
+                    h3.center {color: green;}
+                    <br>
+                    would indicate that &lt;h3&gt; elements that have their class attribute equal to center should be
+                    green.
+                    <br>
+                    In-file CSS can also be applied to individual elements, if the id attribute of the HTML element has
+                    been set (the id attribute should be unique within any given page). If you want to use this type of
+                    CSS then precede the id value by a hash (#) character.
+                    <br>
+                    For example, the style rule
+                    <br>
+                    <br>
+                    #para1 {color: yellow}
+                    <br>
+                    <br>
+                    would be applied to the HTML element with id equal to para1 (provided there is such an element) and
+                    it would appear yellow (unless overridden by a later style rule).
+                    <br>
+                    <br>
+                    You can also group together rules for elements with the same style definitions, separating each
+                    selector with a comma. For example,
+                    <br>
+                    <br>
+                    <br>
+                    h1 {color: red;}
+                    <br>
+                    h2 {color: red;}
+                    <br>
+                    h3 {color: red;}
+                    <br>
+                    <br>
+                    can be grouped together as follows to minimise code and make it easier to follow:
+                    <br>
+                    <br>
+                    h1, h2, h3 {color: red;}
+                    <br>
+                    <br>
+                    More general ways of identifying CSS selectors are set out here.
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div class="box" data-aos="zoom-in-up">
+                <h3> Css Momento </h3>
+                <div class="price">
+                    <span></span>
+                    <span class="amount">download</span>
+                    <span></span>
+                </div>
+
+                <a href="#" class="btn">Download the Css Momento!</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+
+
+            <div class="box" data-aos="fade-up">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="html.html"> <i class="fas fa-chevron-right"></i> html </a>
+                <a href="css.html"> <i class="fas fa-chevron-right"></i> css </a>
+                <a href="js.html"> <i class="fas fa-chevron-right"></i> javascript </a>
+                <a href="quizz.html"> <i class="fas fa-chevron-right"></i> quizz </a>
+                <a href="contact us.html"> <i class="fas fa-chevron-right"></i> contact us </a>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +212-654528465 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +212-627231317 </a>
+                <a href="#"> <i class="fas fa-envelope-open-text"></i> abdohainna2@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> rabat, morocco - 10000 </a>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/people/Abdellah-Hainna/100010364499244/"> <i
+                        class="fab fa-facebook-f"></i> facebook </a>
+                <a href="https://www.facebook.com/people/Abdellah-Hainna/100010364499244/"> <i
+                        class="fab fa-twitter"></i> twitter </a>
+                <a href="https://www.instagram.com/itsabdosk8er/"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="https://www.facebook.com/people/Abdellah-Hainna/100010364499244/"> <i
+                        class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://www.facebook.com/people/Abdellah-Hainna/100010364499244/"> <i
+                        class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> creadet by <span>abdellah hainna</span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 800,
+            delay: 400
+        });
+
+    </script>
+
+</body>
+
+</html>
